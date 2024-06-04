@@ -36,12 +36,20 @@ public class Order extends PanacheEntityBase {
         this.wizard = wizard;
     }
 
-    public MagicalItem getMagicalItem() {
+    public MagicalItem getItem() {
         return magicalItem;
     }
 
-    public void setMagicalItem(MagicalItem magicalItem) {
+    public void setItem(MagicalItem magicalItem) {
         this.magicalItem = magicalItem;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     @Override
